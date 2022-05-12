@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+.login {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+    font-family: "Comfortaa", cursive;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background-color: #00000047;
+    border-radius: 10px;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    text-align: center;
+}
+
+.form input {
+    outline: 0;
+    /* background-color: #f2f2f21c; */
+    background-color: #2d534c8c;
+    width: 85%;
+    border: 0;
+    border-radius: 5px;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "Comfortaa", cursive;
+    color: whitesmoke;
+}
+
+::placeholder {
+    color: #f2f2f287;
+}
+
+.form input:focus {
+    background: #f2f2f24a;
+}
+
+.form button {
+    font-family: "Comfortaa", cursive;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4b6cb7c4;
+    width: 92%;
+    border: 0;
+    border-radius: 5px;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.form button:active {
+    background: #395591;
+}
+
+.form span {
+    font-size: 50px;
+    color: #0861e9db;
+}
+
+.err {
+    text-align: center;
+}
+.errMsg {
+    color: red;
+}
+
+/*-----userlogin and signup-----*/
+.background {
+    /* background: url("https://image.shutterstock.com/image-vector/vector-realistic-isolated-neon-sign-600w-1188351907.jpg"); */
+    background: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main {
+    /* background: #dfe9f5; */
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.container-div {
+    display: flex;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 110vh;
+    left: 0;
+    background: #e0e0e0 !important;
+    width: 280px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 10%;
+}
+
+.logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+ul a {
+    text-decoration: none;
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 280px;
+    padding: 10px;
+}
+
+ul li {
+    list-style: none;
+}
+
+nav .fas {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+a:hover {
+    background: #eee;
+}
+
+.logout {
+    position: absolute;
+    bottom: 60px;
+}
+
+/*--------main-view-------*/
+
+.main-view {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    background: #e0e0e0;
+}
+
+.main-top {
+    display: flex;
+    width: 100%;
+}
+
+.main-top i {
+    position: absolute;
+    right: 0;
+    margin: 10px 30px;
+    color: rgb(11, 109, 109);
+    cursor: pointer;
+}
+.main-skills {
+    display: flex;
+    margin-top: 10px;
+}
+
+.main-skills .card {
+    width: 23%;
+    margin: 10px;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    /* margin-right: 75px; */
+}
+.main-skills .card h3 {
+    margin: 10px;
+    text-transform: capitalize;
+}
+
+.main-skills .card p {
+    font-size: 14px;
+}
+
+.button {
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    background: #9e9a9a;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 50px 50px 85px #868383, -50px -50px 85px #b6b1b1;
+}
+
+.button:hover {
+    background: rgba(223, 70, 15, 0.856);
+}
+
+.main-skills .card i {
+    font-size: 22px;
+    padding: 10px;
+}
+
+.projects {
+    margin-top: 10px;
+}
+
+.myprojects li {
+    list-style: circle;
+    width: 110px;
+    margin-left: 25px;
+}
+.project-button {
+    position: absolute;
+    bottom: 16px;
+    left: 82px;
+}
+.project-card {
+    height: 280px;
+}
+
+/*-----------signup anchor tag hover remove----*/
+a,
+a.hover,
+a:focus,
+a:active {
+    background-color: transparent !important;
+}
+
+.card-color {
+    border-radius: 28px !important;
+    background: #e0e0e0 !important;
+    box-shadow: -19px -19px 31px #eeeeee, 19px 19px 31px #eeeeee !important;
+    border: none !important;
+}
+
+/*----------my profile -------*/
+.profile-backgroud {
+    background-color: #e0e0e0;
+    width: 100%;
+}
+
+.userDetails {
+    width: 600px;
+    height: 350px;
+    margin-left: 170px;
+    margin-top: 82px;
+    border-radius: 9px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    background: #e0e0e0;
+    box-shadow: 50px 50px 80px #d0d0d0, -50px -50px 80px #f0f0f0;
+}
+.common {
+    margin: 14px 0px 13px 30px;
+}
+
+.common input {
+    margin-left: 20px;
+    border: none;
+    border-radius: 2px;
+}
+
+.gender {
+    display: flex;
+}
+.profile-heading {
+    text-align: center;
+}
+.fname input {
+    margin-left: 84px;
+    background: #ebebeb;
+}
+.lname input {
+    margin-left: 87px;
+    background: #ebebeb;
+}
+.email input {
+    margin-left: 124px;
+    background: #ebebeb;
+}
+.gender input {
+    margin-left: 116px;
+}
+.phoneNumber input {
+    margin-left: 54px;
+    background: #ebebeb;
+}
+.alternativeNumber input {
+    background: #ebebeb;
+}
+.gender input {
+    background: #ebebeb;
+}
+
+.profile-btn {
+    text-align: center;
+}
+
+/*-------email verification msg-----*/
+
+.emailMsgBox {
+    margin-top: 120px;
+    padding: 15px;
+}
+.emailMsg {
+    color: whitesmoke;
+}
+.msgOne {
+    font-size: 13px;
+}
+.msgTwo {
+    color: red;
+}
+
+/*-----password section-------*/
+.curpassword input {
+    margin-left: 68px;
+    background: #ebebeb;
+    border: none;
+    border-radius: 2px;
+}
+.newpassword input {
+    margin-left: 92px;
+    background: #ebebeb;
+    border: none;
+    border-radius: 2px;
+}
+.confpassword input {
+    margin-left: 66px;
+    background: #ebebeb;
+    border: none;
+    border-radius: 2px;
+}
+.commonpass {
+    margin: 32px 0px 13px 30px;
+} 
+
+.password-btn{
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+    
+ 

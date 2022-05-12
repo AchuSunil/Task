@@ -1,0 +1,86 @@
+<div class="main">
+    <div class="container-div">
+        <nav>
+            <ul>
+                <li><a href="/" class="logo">
+                        <img src="images/dashboard-logo.png" alt="" />
+                        <span class="nav-item">DashBoard</span>
+                    </a></li>
+                <li><a href="/"><i class="fas fa-home"></i>
+                        <span class="nav-item">Home</span></a></li>
+                <li><a href="/myprofile"><i class="fas fa-user"></i>
+                        <span class="nav-item">Profile</span></a></li>
+                <li><a href=""><i class="fas fa-wallet"></i>
+                        <span class="nav-item">Wallet</span></a></li>
+                <li><a href=""><i class="fas fa-chart-bar"></i>
+                        <span class="nav-item">Analytics</span></a></li>
+                <li><a href=""><i class="fas fa-tasks"></i>
+                        <span class="nav-item">Tasks</span></a></li>
+                <li><a href=""><i class="fas fa-cog"></i>
+                        <span class="nav-item">Settings</span></a></li>
+                <li><a href=""><i class="fas fa-question-circle"></i>
+                        <span class="nav-item">Help</span></a></li>
+                <li><a href="/logout" class="logout"><i class="fas fa-sign-out-alt"></i>
+                        <span class="nav-item">Logout</span></a></li>
+            </ul>
+        </nav>
+
+        <section class="profile-backgroud">
+            <form action="/updatemyprofile" method="post">
+                <div class="userDetails">
+                    <h2 class="profile-heading">My Profile</h2>
+                    <div class="fname common">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" value="{{userInfo.firstName}}" />
+                    </div>
+                    <div class="lname common">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" value="{{userInfo.lastName}}" />
+                    </div>
+                    <div class="email common">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" value="{{userInfo.email}}" disabled />
+                    </div>
+                    <div class="gender common">
+                        <label for="gender">Gender</label>
+                        {{#if userInfo.gender}}
+                            <div >
+                                <input type="text" name="gender" id="gender" value="{{userInfo.gender}}" disabled />
+                            </div>
+                        {{else}}
+                            <div>
+                                <input type="radio" name="gender" id="male" value="male" />
+                                <label for="male">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" id="female" value="female" />
+                                <label for="female">Female</label>
+                            </div>
+                        {{/if}}
+
+                    </div>
+                    <div class="phoneNumber common">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" name="phoneNumber" id="phoneNumber" value="{{userInfo.phoneNumber}}" />
+                    </div>
+                    <div class="alternativeNumber common">
+                        <label for="alternativeNumber">Alternative Number</label>
+                        <input
+                            type="text"
+                            name="alternativeNumber"
+                            id="alternativeNumber"
+                            value="{{userInfo.alternativeNumber}}"
+                        />
+
+                    </div>
+                    <div class="profile-btn">
+                        <button class="btn bg-success text-light btn-sm">Save</button>
+                        <a href="/myprofile" class="btn bg-danger text-light btn-sm ms-2">Cancel</a>
+                    </div>
+
+                </div>
+            </form>
+        </section>
+
+    </div>
+</div>

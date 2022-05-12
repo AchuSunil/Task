@@ -1,0 +1,25 @@
+
+<div class="background">
+    <div class="login">
+        <div class="form">
+            <form class="login-form" id="login" method="post" action="/login">
+                <span class="material-icons">Login </span>
+                {{#if errMsg}}
+                <div class="err">
+                    <p class="errMsg">{{errMsg}}</p>
+                </div>
+                {{/if}}
+                <div class="text-danger">
+                    <input type="text" placeholder="email" name="email" id="email" autocomplete="off" /></div>
+                <div class="text-danger">
+                    <input type="password" placeholder="password" id="password" name="password" required="true" /></div>
+                <button type="submit">login</button>
+                <p class="mt-4 text-light">Not Registered? <a href="/signup" class="login-signup">Register Now!</a></p>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
