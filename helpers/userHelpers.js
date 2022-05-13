@@ -7,8 +7,9 @@ const crypto = require("crypto");
 module.exports = {
     doSignup: async (userDetails) => {
         userDetails.password = await bcrypt.hash(userDetails.password, 10);
-        return new Promise((resolve, reject) => {
-            let user = db.get().collection(collection.user).find({ email: userDetails.email });
+        return new Promise(async(resolve, reject) => {
+            let user = await db.get().collection(collection.user).findOne({ email: userDetails.email });
+
             if (user) {
                 resolve({ status: false });
             } else {
